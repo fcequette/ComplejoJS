@@ -1,6 +1,6 @@
 Ext.define('Torneo.view.main.MainTorneos', {
      extend: 'Ext.panel.Panel'
-    ,xtype: 'mainlist'
+    ,xtype: 'maintorneos'
     ,layout: 'hbox'
     ,fullscreen:true
     ,items:[{

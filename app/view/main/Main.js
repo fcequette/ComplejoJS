@@ -86,7 +86,7 @@ Ext.define('Torneo.view.main.Main', {
         iconCls: 'fa-soccer-ball-o',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'mainlist'
+            xtype: 'maintorneos'
         }]
         ,listeners:{
           activate:function(btn,e){

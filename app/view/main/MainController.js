@@ -13,7 +13,7 @@ Ext.define('Torneo.view.main.MainController', {
         Ext.Msg.confirm('Confirm', 'Are you sure?', 'onConfirm', this);
     },
     onafterRender:function(panel,e){
-        Ext.create('Ext.window.Window', {
+      /*  Ext.create('Ext.window.Window', {
              height: '100%',
              width:  '100%',
              onEsc: Ext.emptyFn(),
@@ -160,7 +160,7 @@ Ext.define('Torneo.view.main.MainController', {
                      Ext.cq1('#txtUsu').focus(false,100);
                    }
                  }
-          }).show();
+          }).show();*/
     }
     ,onRender: function(btn,e){
 

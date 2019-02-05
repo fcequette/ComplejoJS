@@ -4,7 +4,7 @@ Ext.define('Torneo.view.main.TreeEquipos', {
     ,itemId:'treequipos'
     ,title: '<p style="height:4px">EQUIPOS</p>'
     ,scrollable: 'y'
-    ,multiSelect: true
+    //,multiSelect: true
     ,flex:1
     ,width:'50%'
     ,tbar: [{
@@ -28,6 +28,7 @@ Ext.define('Torneo.view.main.TreeEquipos', {
                       v = new RegExp(this.getValue(), 'i');
                       tree.store.filter({
                           filterFn: function (node) {
+                            console.log('este es node', node);
                               var children = node.childNodes,
                                   len = children && children.length,
                                   visible = node.isLeaf() ? v.test(node.get('text')) : false,
